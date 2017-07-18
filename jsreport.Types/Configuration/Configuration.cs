@@ -9,7 +9,8 @@ namespace jsreport.Types
     {
         public Configuration()
         {
-
+            Phantom = new PhantomConfiguration();
+            Tasks = new TasksConfiguration();
         }
 
         public Configuration Authenticated(string username, string password)
@@ -30,7 +31,7 @@ namespace jsreport.Types
         }
 
         public Configuration AllowLocalFilesAccess()
-        {
+        {            
             Phantom.AllowLocalFilesAccess = true;
             Tasks.AllowedModules = "*";
 
@@ -38,7 +39,8 @@ namespace jsreport.Types
         }
 
         public Configuration BaseUrl(string url)
-        {            
+        {
+            Base = new BaseConfiguration() { Url = url };
             return this;
         }
 
@@ -65,6 +67,8 @@ namespace jsreport.Types
         public PhantomConfiguration Phantom { get; set; }
                 
         public TasksConfiguration Tasks { get; set; }
+
+        public BaseConfiguration Base { get; set; }
 
         public AuthenticationConfiguration Authentication { get; set; }      
         
