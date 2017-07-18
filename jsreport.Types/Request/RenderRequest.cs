@@ -5,7 +5,14 @@
         public RenderRequest()
         {
             Template = new Template();
-            Options = new RenderOptions();
+            Options = new RenderOptions()
+            {
+                // it makes sense to enable this always
+                Debug = new DebugOptions()
+                {
+                    LogsToResponseHeader = true
+                }
+            };
         }
 
         public Template Template { get; set; }
