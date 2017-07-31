@@ -2,7 +2,7 @@
 
 namespace jsreport.Types
 {
-    public class ConnectionString
+    public class ConnectionStringConfiguration
     {
         [DataMember(Name = "connectionString_name")]
         public string Name { get; set; }

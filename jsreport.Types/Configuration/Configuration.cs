@@ -31,7 +31,7 @@ namespace jsreport.Types
         }
 
         public Configuration AllowLocalFilesAccess()
-        {            
+        {
             Phantom.AllowLocalFilesAccess = true;
             Tasks.AllowedModules = "*";
 
@@ -44,9 +44,35 @@ namespace jsreport.Types
             return this;
         }
 
+        public Configuration BaseUrlAsWorkingDirectory()
+        {
+            Base = new BaseConfiguration() { Url = "${cwd}/" };
+            return this;
+        }
+
         public Configuration HostedOnSubpath(string subpath)
         {
             AppPath = subpath;
+            return this;
+        }
+
+        public Configuration FileSystemStore()
+        {
+            ConnectionString = new ConnectionStringConfiguration()
+            {
+                Name = "fs"
+            };
+
+            return this;
+        }
+
+        public Configuration CreateSamples()
+        {
+            SampleTemplate = new SampleTemplateConfiguration()
+            {
+                CreateSamples = true
+            };
+
             return this;
         }
 
@@ -61,8 +87,13 @@ namespace jsreport.Types
 
         [DataMember(Name = "appPath")]
         public string AppPath { get; set; }
+
+        [DataMember(Name = "license-key")]
+        public string LicenseKey { get; set; }
+
+        public SampleTemplateConfiguration SampleTemplate { get; set; }
                 
-        public ConnectionString ConnectionString { get; set; }
+        public ConnectionStringConfiguration ConnectionString { get; set; }
                 
         public PhantomConfiguration Phantom { get; set; }
                 
