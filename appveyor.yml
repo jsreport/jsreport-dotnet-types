@@ -1,4 +1,4 @@
-image: Visual Studio 2017
+image: Visual Studio 2017 Preview
 environment:
   DOTNET_CLI_TELEMETRY_OPTOUT: true
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
@@ -12,4 +12,3 @@ deploy:
     secure: cm3zn2aDli94+zqlULKlvqQItEfAHHfqpBnUWILfZ8jp+8LjVdIllIH1CPFsXs0B
   on:
     appveyor_repo_tag: true
-  artifact: /.*\.nupkg/    
