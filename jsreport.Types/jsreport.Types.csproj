@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.6</TargetFramework>
+    <TargetFrameworks>netstandard1.6;net45</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.7.0-beta1</Version>
+    <Version>1.7.0-beta2</Version>
     <Description>jsreport entities strong types used in .net sdk</Description>
     <Company>jsreport</Company>
     <Product>jsreport</Product>
@@ -15,6 +15,10 @@
     <PackageIconUrl>http://jsreport.net/img/favicon.ico</PackageIconUrl>
     <RepositoryUrl>https://github.com/jsreport/jsreport-dotnet</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>Release notes are at https://github.com/jsreport/jsreport-dotnet-types/releases</PackageReleaseNotes>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <AssemblyVersion>1.7.0.1</AssemblyVersion>
+    <FileVersion>1.7.0.1</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
