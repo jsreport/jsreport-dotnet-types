@@ -3,6 +3,18 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.6</TargetFramework>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Version>1.7.0-preview1</Version>
+    <Description>jsreport entities strong types used in .net sdk</Description>
+    <Company>jsreport</Company>
+    <Product>jsreport</Product>
+    <PackageTags>jsreport</PackageTags>
+    <Authors>Jan Blaha</Authors>
+    <Copyright>Copyright 2013-2017 Jan Blaha</Copyright>
+    <PackageLicenseUrl>http://www.opensource.org/licenses/mit-license.php</PackageLicenseUrl>
+    <PackageProjectUrl>https://jsreport.net</PackageProjectUrl>
+    <PackageIconUrl>http://jsreport.net/img/favicon.ico</PackageIconUrl>
+    <RepositoryUrl>https://github.com/jsreport/jsreport-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
