@@ -1,4 +1,4 @@
-# jsreport-dotnet-types
+# jsreport.Types
 [![Build status](https://ci.appveyor.com/api/projects/status/sx90dahobt3dhr2f?svg=true)](https://ci.appveyor.com/project/pofider/jsreport-dotnet-types)
 [![NuGet](https://img.shields.io/nuget/v/jsreport.Types.svg)](https://nuget.org/packages/jsreport.Types)
 
