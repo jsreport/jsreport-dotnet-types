@@ -10,7 +10,6 @@ namespace jsreport.Types
     {
         public Template ()
         {
-            Scripts = new List<Script>();
             Phantom = new Phantom();
         }         
 
