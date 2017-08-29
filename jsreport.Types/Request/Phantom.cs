@@ -61,21 +61,21 @@ namespace jsreport.Types
         /// <summary>
         /// Milliseconds to wait for js rendering like 1000
         /// </summary>
-        public int PrintDelay { get; set; }
+        public int? PrintDelay { get; set; }
 
         /// <summary>
         /// Block all the javascript on the page
         /// </summary>
-        public bool BlockJavaScript { get; set; }
+        public bool? BlockJavaScript { get; set; }
 
         /// <summary>
         /// The printing waits for the trigger, see http://jsreport.net/learn/phantom-pdf
         /// </summary>
-        public bool WaitForJS { get; set; }
+        public bool? WaitForJS { get; set; }
 
         /// <summary>
         /// Timeout for external resources like scripts or css load
         /// </summary>
-        public int ResourceTimeout { get; set; }
+        public int? ResourceTimeout { get; set; }
     }
 }

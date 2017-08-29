@@ -2,7 +2,7 @@
 {
     public class ReportsOptions
     {
-        public bool Save { get; set; }
-        public bool Async { get; set; }
+        public bool? Save { get; set; }
+        public bool? Async { get; set; }
     }
 }

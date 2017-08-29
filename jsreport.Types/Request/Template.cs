@@ -9,8 +9,7 @@ namespace jsreport.Types
     public class Template
     {
         public Template ()
-        {
-            Phantom = new Phantom();
+        {            
         }         
 
         public string _id { get; set; }

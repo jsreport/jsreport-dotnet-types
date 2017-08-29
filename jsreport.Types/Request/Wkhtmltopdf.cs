@@ -20,15 +20,15 @@ namespace jsreport.Types
         public string PageHeight { get; set; }
         public string PageWidth { get; set; }
         public string Cover { get; set; }
-        public bool Toc { get; set; }
+        public bool? Toc { get; set; }
         public string TocHeaderText { get; set; }
         public string TocLevelIndentation { get; set; }
         public string TocTextSizeShrink { get; set; }
         public string Title { get; set; }
-        public bool KeepRelativeLinks { get; set; }
-        public bool DisableSmartShrinking { get; set; }
-        public bool PrintMediaType { get; set; }
-        public int JavascriptDelay { get; set; }
+        public bool? KeepRelativeLinks { get; set; }
+        public bool? DisableSmartShrinking { get; set; }
+        public bool? PrintMediaType { get; set; }
+        public int? JavascriptDelay { get; set; }
         public string WindowStatus { get; set; }        
 
         [JsonConverter(typeof(StringEnumConverter))]

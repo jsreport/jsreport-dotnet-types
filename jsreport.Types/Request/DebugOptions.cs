@@ -2,7 +2,7 @@
 {
     public class DebugOptions
     {
-        public bool LogsToResponseHeader { get; set; }
-        public bool LogsToResponse { get; set; }
+        public bool? LogsToResponseHeader { get; set; }
+        public bool? LogsToResponse { get; set; }
     }
 }
