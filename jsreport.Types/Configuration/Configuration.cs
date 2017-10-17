@@ -11,6 +11,7 @@ namespace jsreport.Types
         {
             Phantom = new PhantomConfiguration();
             Tasks = new TasksConfiguration();
+            Scripts = new ScriptsConfiguration();
         }
 
         public Configuration Authenticated(string username, string password)
@@ -34,6 +35,7 @@ namespace jsreport.Types
         {
             Phantom.AllowLocalFilesAccess = true;
             Tasks.AllowedModules = "*";
+            Scripts.AllowedModules = "*";
 
             return this;
         }
@@ -104,5 +106,7 @@ namespace jsreport.Types
         public AuthenticationConfiguration Authentication { get; set; }      
         
         public LoggerConfiguration Logger { get; set; }
+
+        public ScriptsConfiguration Scripts { get; set; }
     }
 }
