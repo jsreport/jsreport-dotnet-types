@@ -93,6 +93,9 @@ namespace jsreport.Types
         [DataMember(Name = "license-key")]
         public string LicenseKey { get; set; }
 
+        [DataMember(Name = "discover")]
+        public bool Discover { get; set; }
+
         public SampleTemplateConfiguration SampleTemplate { get; set; }
                 
         public ConnectionStringConfiguration ConnectionString { get; set; }
