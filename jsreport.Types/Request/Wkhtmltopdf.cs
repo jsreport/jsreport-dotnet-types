@@ -10,6 +10,7 @@ namespace jsreport.Types
     {
         public string Header { get; set; }
         public string HeaderHeight { get; set; }
+        public string Footer { get; set; }
         public string FooterHeight { get; set; }
         public string Dpi { get; set; }
         public string MarginBottom { get; set; }
