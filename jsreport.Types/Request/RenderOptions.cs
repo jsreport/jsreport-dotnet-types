@@ -8,6 +8,8 @@
 
         public string Base { get; set; }
 
+        public string Language { get; set; }
+
         public DebugOptions Debug { get; set; }
 
         public ReportsOptions Reports { get; set; }
