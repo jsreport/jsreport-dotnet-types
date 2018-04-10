@@ -1,4 +1,5 @@
-﻿using System;
+﻿using jsreport.Types.Configuration;
+using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using System.Text;
@@ -111,5 +112,7 @@ namespace jsreport.Types
         public LoggerConfiguration Logger { get; set; }
 
         public ScriptsConfiguration Scripts { get; set; }
+
+        public ExpressConfiguration Express { get; set; }
     }
 }
