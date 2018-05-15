@@ -1,8 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
-using System.Text;
+﻿using System.Runtime.Serialization;
 
 namespace jsreport.Types
 {
@@ -29,6 +25,8 @@ namespace jsreport.Types
         [EnumMember(Value = "wkhtmltopdf")]
         Wkhtmltopdf,
         [EnumMember(Value = "phantom-image")]
-        PhantomImage     
+        PhantomImage,
+        [EnumMember(Value = "chrome-pdf")]
+        ChromePdf
     }
 }
