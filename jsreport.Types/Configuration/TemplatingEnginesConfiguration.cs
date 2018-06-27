@@ -2,9 +2,9 @@
 
 namespace jsreport.Types
 {
-    public class TasksConfiguration
+    public class TemplatingEnginesConfiguration
     {
-        [DataMember(Name = "tasks_allowedModules")]
+        [DataMember(Name = "templatingEngines_allowedModules")]
         public string AllowedModules { get; set; }
     }
 }

@@ -9,14 +9,12 @@ namespace jsreport.Types
     {
         public Configuration()
         {
-            Phantom = new PhantomConfiguration();
-            Tasks = new TasksConfiguration();
-            Scripts = new ScriptsConfiguration();
+            Extensions = new ExtensionsConfiguration();                  
         }
 
         public Configuration Authenticated(string username, string password)
         {
-            Authentication = new AuthenticationConfiguration()
+            Extensions.Authentication = new AuthenticationConfiguration()
             {
                 Admin = new AdminUserConfiguration()
                 {
@@ -31,24 +29,21 @@ namespace jsreport.Types
             return this;
         }
 
-        public Configuration AllowLocalFilesAccess()
+        public Configuration AllowedLocalFilesAccess()
         {
-            Phantom.AllowLocalFilesAccess = true;
-            Tasks.AllowedModules = "*";
-            Scripts.AllowedModules = "*";
-
+            AllowLocalFilesAccess = true;
             return this;
         }
 
         public Configuration BaseUrl(string url)
         {
-            Base = new BaseConfiguration() { Url = url };
+            Extensions.Base = new BaseConfiguration() { Url = url };
             return this;
         }
 
         public Configuration BaseUrlAsWorkingDirectory()
         {
-            Base = new BaseConfiguration() { Url = "${cwd}/" };
+            Extensions.Base = new BaseConfiguration() { Url = "${cwd}/" };
             return this;
         }
 
@@ -60,9 +55,9 @@ namespace jsreport.Types
 
         public Configuration FileSystemStore()
         {
-            ConnectionString = new ConnectionStringConfiguration()
+            Store = new StoreConfiguration()
             {
-                Name = "fs"
+                Provider = "fs"
             };
 
             return this;
@@ -70,13 +65,18 @@ namespace jsreport.Types
 
         public Configuration CreateSamples()
         {
-            SampleTemplate = new SampleTemplateConfiguration()
+            Extensions.SampleTemplate = new SampleTemplateConfiguration()
             {
                 CreateSamples = true
             };
 
             return this;
         }
+        
+        public ExtensionsConfiguration Extensions { get; set; }
+
+        [DataMember(Name = "allowLocalFilesAccess")]
+        public bool AllowLocalFilesAccess { get; set; }        
 
         [DataMember(Name = "httpPort")]
         public int? HttpPort { get; set; }
@@ -95,23 +95,11 @@ namespace jsreport.Types
 
         [DataMember(Name = "discover")]
         public bool Discover { get; set; }
-
-        public SampleTemplateConfiguration SampleTemplate { get; set; }
                 
-        public ConnectionStringConfiguration ConnectionString { get; set; }
+        public StoreConfiguration Store { get; set; }       
                 
-        public PhantomConfiguration Phantom { get; set; }
-                
-        public TasksConfiguration Tasks { get; set; }
-
-        public BaseConfiguration Base { get; set; }
-
-        public AuthenticationConfiguration Authentication { get; set; }      
+        public TemplatingEnginesConfiguration TemplatingEngines { get; set; }   
         
-        public LoggerConfiguration Logger { get; set; }
-
-        public ScriptsConfiguration Scripts { get; set; }
-
-        public ExpressConfiguration Express { get; set; }
+        public LoggerConfiguration Logger { get; set; }   
     }
 }

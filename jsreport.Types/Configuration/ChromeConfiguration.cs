@@ -5,9 +5,9 @@ using System.Text;
 
 namespace jsreport.Types
 {
-    public class BaseConfiguration
+    public class ChromeConfiguration
     {
-        [DataMember(Name = "extensions_base_url")]
-        public string Url { get; set; }
+        [DataMember(Name = "chrome_timeout")]
+        public int? Timeout { get; set; }     
     }
 }

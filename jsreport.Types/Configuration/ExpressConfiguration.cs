@@ -7,7 +7,7 @@ namespace jsreport.Types
 {
     public class ExpressConfiguration
     {
-        [DataMember(Name = "express_inputRequestLimit")]
+        [DataMember(Name = "extensions_express_inputRequestLimit")]
         public string InputRequestLimit { get; set; }
     }
 }

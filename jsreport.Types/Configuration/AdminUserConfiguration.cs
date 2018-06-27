@@ -8,10 +8,10 @@ namespace jsreport.Types
         {
         }
 
-        [DataMember(Name = "authentication_admin_username")]
+        [DataMember(Name = "extensions_authentication_admin_username")]
         public string Username { get; set; }
 
-        [DataMember(Name = "authentication_admin_password")]
+        [DataMember(Name = "extensions_authentication_admin_password")]
         public string Password { get; set; }
     }
 }

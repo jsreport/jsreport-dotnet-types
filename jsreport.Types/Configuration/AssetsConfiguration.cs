@@ -4,10 +4,10 @@ namespace jsreport.Types
 {
     public class AssetsConfiguration
     {
-        [DataMember(Name = "assets_allowedFiles")]
+        [DataMember(Name = "extensions_assets_allowedFiles")]
         public string AllowedFiles { get; set; }
 
-        [DataMember(Name = "assets_searchOnDiskIfNotFoundInStore")]
+        [DataMember(Name = "extensions_assets_searchOnDiskIfNotFoundInStore")]
         public bool SearchOnDiskIfNotFoundInStore { get; set; }
     }
 }

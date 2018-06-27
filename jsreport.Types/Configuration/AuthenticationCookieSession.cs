@@ -4,7 +4,7 @@ namespace jsreport.Types
 {
     public class AuthenticationCookieSession
     {
-        [DataMember(Name = "authentication_cookieSession_secret")]
+        [DataMember(Name = "extensions_authentication_cookieSession_secret")]
         public string Secret { get; set; }
     }
 }

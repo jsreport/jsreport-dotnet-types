@@ -46,6 +46,10 @@ namespace jsreport.Types
         /// </summary>
         public string Name { get; set; }
 
+        public Chrome Chrome { get; set; }
+
+        public HtmlToXlsx HtmlToXlsx { get; set; }
+
         public Phantom Phantom { get; set; }
 
         public Wkhtmltopdf Wkhtmltopdf { get; set; }
