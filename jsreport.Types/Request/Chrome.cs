@@ -24,5 +24,6 @@ namespace jsreport.Types
         public bool? WaitForNetworkIddle { get; set; }
         public string HeaderTemplate { get; set; }
         public string FooterTemplate { get; set; }
+        public MediaType MediaType { get; set; }
     }
 }
