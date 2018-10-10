@@ -57,5 +57,7 @@ namespace jsreport.Types
         public XlsxTemplate XlsxTemplate { get; set; }
 
         public IList<Script> Scripts { get; set; }
+
+        public IList<PdfOperation> PdfOperations { get; set; }
     }
 }
