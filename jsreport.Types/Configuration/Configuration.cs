@@ -97,7 +97,7 @@ namespace jsreport.Types
         public bool Discover { get; set; }
 
         [DataMember(Name = "chrome")]
-        public Chrome Chrome { get; set; }
+        public ChromeConfiguration Chrome { get; set; }
 
         public StoreConfiguration Store { get; set; }       
                 

@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard1.6;net45</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>2.2.4</Version>
+    <Version>2.2.5</Version>
     <Description>jsreport entities strong types used in .net sdk</Description>
     <Company>jsreport</Company>
     <Product>jsreport</Product>
@@ -17,8 +17,8 @@
     <RepositoryType>git</RepositoryType>
     <PackageReleaseNotes>Release notes are at https://github.com/jsreport/jsreport-dotnet-types/releases</PackageReleaseNotes>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <AssemblyVersion>2.2.4.0</AssemblyVersion>
-    <FileVersion>2.2.4.0</FileVersion>
+    <AssemblyVersion>2.2.5.0</AssemblyVersion>
+    <FileVersion>2.2.5.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
