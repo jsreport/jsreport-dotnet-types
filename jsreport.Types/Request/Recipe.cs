@@ -27,6 +27,8 @@ namespace jsreport.Types
         [EnumMember(Value = "phantom-image")]
         PhantomImage,
         [EnumMember(Value = "chrome-pdf")]
-        ChromePdf
+        ChromePdf,
+        [EnumMember(Value = "chrome-image")]
+        ChromeImage
     }
 }

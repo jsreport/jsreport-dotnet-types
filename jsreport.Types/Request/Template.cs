@@ -48,6 +48,8 @@ namespace jsreport.Types
 
         public Chrome Chrome { get; set; }
 
+        public ChromeImage ChromeImage { get; set; }
+
         public HtmlToXlsx HtmlToXlsx { get; set; }
 
         public Phantom Phantom { get; set; }

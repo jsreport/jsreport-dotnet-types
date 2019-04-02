@@ -12,6 +12,7 @@ namespace jsreport.Types
         public PdfOperationType? Type { get; set; }
         public bool? MergeToFront { get; set; }
         public bool? RenderForEveryPage { get; set; }
+        public bool? MergeWholeDocument { get; set; }
 
         public string TemplateShortid { get; set; }
         public Template Template { get; set; }
