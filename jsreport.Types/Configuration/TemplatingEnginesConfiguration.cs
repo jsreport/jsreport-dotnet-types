@@ -6,5 +6,8 @@ namespace jsreport.Types
     {
         [DataMember(Name = "templatingEngines_allowedModules")]
         public string AllowedModules { get; set; }
+
+        [DataMember(Name = "templatingEngines_timeout")]
+        public int? Timeout { get; set; }
     }
 }
