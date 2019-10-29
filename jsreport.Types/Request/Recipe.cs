@@ -29,6 +29,12 @@ namespace jsreport.Types
         [EnumMember(Value = "chrome-pdf")]
         ChromePdf,
         [EnumMember(Value = "chrome-image")]
-        ChromeImage
+        ChromeImage,
+        [EnumMember(Value = "docx")]
+        Docx,
+        [EnumMember(Value = "pptx")]
+        Pptx,
+        [EnumMember(Value = "static-pdf")]
+        StaticPdf
     }
 }

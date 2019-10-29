@@ -8,9 +8,9 @@ namespace jsreport.Types
 {
     public class Template
     {
-        public Template ()
-        {            
-        }         
+        public Template()
+        {
+        }
 
         public string _id { get; set; }
 
@@ -33,13 +33,13 @@ namespace jsreport.Types
         /// Used javascript templating engine like "jsrender" or "handlebars"
         /// </summary>  
         [JsonConverter(typeof(StringEnumConverter))]
-        public Engine? Engine { get; set; } 
+        public Engine? Engine { get; set; }
 
         /// <summary>
         /// Used recipe defining rendering process like "html", "phantom-pdf" or "fop"
         /// </summary> 
         [JsonConverter(typeof(StringEnumConverter))]
-        public Recipe? Recipe { get; set; }       
+        public Recipe? Recipe { get; set; }
 
         /// <summary>
         /// Readable name, does not need to be unique
@@ -61,5 +61,12 @@ namespace jsreport.Types
         public IList<Script> Scripts { get; set; }
 
         public IList<PdfOperation> PdfOperations { get; set; }
+
+        public Pptx Pptx { get; set; }
+
+        public Docx Docx { get; set; }
+
+        public StaticPdf StaticPdf { get; set; }        
+
     }
 }

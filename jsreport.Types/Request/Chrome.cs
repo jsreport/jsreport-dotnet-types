@@ -27,5 +27,6 @@ namespace jsreport.Types
         public string FooterTemplate { get; set; }
         [JsonConverter(typeof(StringEnumConverter))]
         public MediaType? MediaType { get; set; }
+        public string Url { get; set; }
     }
 }

@@ -20,5 +20,6 @@ namespace jsreport.Types
         public MediaType? MediaType { get; set; }
         public bool? WaitForJS { get; set; }
         public bool? WaitForNetworkIddle { get; set; }
+        public string Url { get; set; }
     }
 }
