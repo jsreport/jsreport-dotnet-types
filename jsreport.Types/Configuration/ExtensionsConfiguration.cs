@@ -15,6 +15,9 @@ namespace jsreport.Types
         public AuthenticationConfiguration Authentication { get; set; }
 
         public SampleTemplateConfiguration SampleTemplate { get; set; }
+
         public PhantomConfiguration Phantom { get; set; }
+
+        public UnoconvConfiguration Unoconv { get; set; }
     }
 }

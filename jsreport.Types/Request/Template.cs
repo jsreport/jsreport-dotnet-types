@@ -66,7 +66,8 @@ namespace jsreport.Types
 
         public Docx Docx { get; set; }
 
-        public StaticPdf StaticPdf { get; set; }        
+        public StaticPdf StaticPdf { get; set; }
 
+        public Unoconv Unoconv { get; set; }
     }
 }
