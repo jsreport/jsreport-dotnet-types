@@ -94,7 +94,7 @@ namespace jsreport.Types
         public string LicenseKey { get; set; }
 
         [DataMember(Name = "discover")]
-        public bool Discover { get; set; }
+        public bool? Discover { get; set; }
 
         public ChromeConfiguration Chrome { get; set; }
 

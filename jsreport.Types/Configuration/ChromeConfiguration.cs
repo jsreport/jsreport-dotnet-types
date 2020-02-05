@@ -9,5 +9,8 @@ namespace jsreport.Types
     {
         [DataMember(Name = "chrome_timeout")]
         public int? Timeout { get; set; }     
+
+        [DataMember(Name = "chrome_strategy")]
+        public ChromeStrategy? Strategy { get; set; }
     }
 }
