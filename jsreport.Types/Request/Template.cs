@@ -56,6 +56,8 @@ namespace jsreport.Types
 
         public Wkhtmltopdf Wkhtmltopdf { get; set; }
 
+        public Xlsx Xlsx { get; set; }
+
         public XlsxTemplate XlsxTemplate { get; set; }
 
         public IList<Script> Scripts { get; set; }
@@ -69,5 +71,13 @@ namespace jsreport.Types
         public StaticPdf StaticPdf { get; set; }
 
         public Unoconv Unoconv { get; set; }
+
+        public PdfPassword PdfPassword { get; set; }
+
+        public PdfMeta PdfMeta { get; set; }
+
+        public OfficePassword OfficePassword { get; set; }
+
+        public PdfSign PdfSign { get; set; }
     }
 }

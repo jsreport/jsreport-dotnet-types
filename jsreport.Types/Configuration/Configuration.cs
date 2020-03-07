@@ -96,12 +96,20 @@ namespace jsreport.Types
         [DataMember(Name = "discover")]
         public bool? Discover { get; set; }
 
+        [DataMember(Name = "reportTimeout")]
+        public int? ReportTimeout { get; set; }
+
+        [DataMember(Name = "enableRequestReportTimeout")]
+        public bool? EnableRequestReportTimeout { get; set; }
+
         public ChromeConfiguration Chrome { get; set; }
 
         public StoreConfiguration Store { get; set; }       
                 
         public TemplatingEnginesConfiguration TemplatingEngines { get; set; }   
         
-        public LoggerConfiguration Logger { get; set; }   
+        public LoggerConfiguration Logger { get; set; }
+
+        public LoggerConfiguration EncryptionConfiguration { get; set; }        
     }
 }

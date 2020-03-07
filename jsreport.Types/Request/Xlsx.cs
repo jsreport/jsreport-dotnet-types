@@ -4,9 +4,8 @@ using System.Text;
 
 namespace jsreport.Types
 {
-    public class HtmlToXlsx
-    {      
-        public string HtmlEngine { get; set; }
+    public class Xlsx
+    {
         public string TemplateAssetShortid { get; set; }
         public Asset TemplateAsset { get; set; }
     }

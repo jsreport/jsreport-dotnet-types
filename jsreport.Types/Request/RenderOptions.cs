@@ -13,5 +13,7 @@
         public DebugOptions Debug { get; set; }
 
         public ReportsOptions Reports { get; set; }
+
+        public string ReportName { get; set; }
     }
 }
