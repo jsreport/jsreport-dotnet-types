@@ -28,8 +28,7 @@ namespace jsreport.Types
         public string ContentDisposition { get; set; }
 
         public string ReportPermanentLink { get; set; }
-        public string ReportId { get; set; }
-        public int? NumberOfPages { get; set; }
+        public string ReportId { get; set; }        
         public string AsyncReportLocation { get; set; }
 
         public IDictionary<string, string> RawDictionary { get; set; }
