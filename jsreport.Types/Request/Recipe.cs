@@ -35,6 +35,8 @@ namespace jsreport.Types
         [EnumMember(Value = "pptx")]
         Pptx,
         [EnumMember(Value = "static-pdf")]
-        StaticPdf
+        StaticPdf,
+        [EnumMember(Value = "html-embedded-in-docx")]
+        HtmlEmbeddedInDocx
     }
 }
