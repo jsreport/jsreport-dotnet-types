@@ -4,5 +4,6 @@
     {
         public bool? Save { get; set; }
         public bool? Async { get; set; }
+        public string BlobName { get; set; }
     }
 }
