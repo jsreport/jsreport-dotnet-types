@@ -8,7 +8,7 @@ namespace jsreport.Types
 {
     public class Chrome
     {       
-        public decimal Scale { get; set; }        
+        public decimal? Scale { get; set; }        
         public bool? DisplayHeaderFooter { get; set; }
         public bool? PrintBackground { get; set; }
         public string Footer { get; set; }        
