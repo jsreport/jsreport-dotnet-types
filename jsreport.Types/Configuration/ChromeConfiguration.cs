@@ -12,7 +12,8 @@ namespace jsreport.Types
         [DataMember(Name = "chrome_timeout")]
         public int? Timeout { get; set; }
 
-        [JsonConverter(typeof(StringEnumConverter))]     
+        [JsonConverter(typeof(StringEnumConverter))]
+        [DataMember(Name = "chrome_strategy")]
         public ChromeStrategy? Strategy { get; set; }
 
         [DataMember(Name = "chrome_numberOfWorkers")]
