@@ -18,6 +18,8 @@ namespace jsreport.Types
 
         public PhantomConfiguration Phantom { get; set; }
 
-        public UnoconvConfiguration Unoconv { get; set; }
+        public UnoconvConfiguration Unoconv { get; set; }        
+
+        public SchedulingConfiguration Scheduling { get; set; }
     }
 }

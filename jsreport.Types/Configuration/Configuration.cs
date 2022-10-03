@@ -29,9 +29,16 @@ namespace jsreport.Types
             return this;
         }
 
+        [Obsolete("Use DoTrustUserCode instead for v3")]
         public Configuration AllowedLocalFilesAccess()
         {
             AllowLocalFilesAccess = true;
+            return this;
+        }
+
+        public Configuration DoTrustUserCode()
+        {
+            TrustUserCode = true;
             return this;
         }
 
@@ -75,8 +82,12 @@ namespace jsreport.Types
         
         public ExtensionsConfiguration Extensions { get; set; }
 
+        [Obsolete("Use TrustUserCode instead for v3")]
         [DataMember(Name = "allowLocalFilesAccess")]
-        public bool AllowLocalFilesAccess { get; set; }        
+        public bool AllowLocalFilesAccess { get; set; }
+
+        [DataMember(Name = "trustUserCode")]
+        public bool TrustUserCode { get; set; }
 
         [DataMember(Name = "httpPort")]
         public int? HttpPort { get; set; }
@@ -96,6 +107,9 @@ namespace jsreport.Types
         [DataMember(Name = "discover")]
         public bool? Discover { get; set; }
 
+        [DataMember(Name = "loadConfig")]
+        public bool? LoadConfig { get; set; }
+
         [DataMember(Name = "reportTimeout")]
         public int? ReportTimeout { get; set; }
 
@@ -104,12 +118,16 @@ namespace jsreport.Types
 
         public ChromeConfiguration Chrome { get; set; }
 
-        public StoreConfiguration Store { get; set; }       
-                
-        public TemplatingEnginesConfiguration TemplatingEngines { get; set; }   
+        public StoreConfiguration Store { get; set; }      
         
         public LoggerConfiguration Logger { get; set; }
 
         public LoggerConfiguration EncryptionConfiguration { get; set; }        
+
+        public ProfilerConfiguration Profiler { get; set; }
+
+        public LicenseConfiguration License { get; set; }
+
+        public IList<string> ExtensionsList { get; set; }
     }
 }
