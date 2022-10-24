@@ -12,5 +12,6 @@ namespace jsreport.Types
         public string Keywords { get; set; }
         public string Creator { get; set; }
         public string Producer { get; set; }
+        public Dictionary<string, string> Custom { get; set; }
     }
 }
