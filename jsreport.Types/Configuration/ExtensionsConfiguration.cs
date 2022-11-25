@@ -21,5 +21,7 @@ namespace jsreport.Types
         public UnoconvConfiguration Unoconv { get; set; }        
 
         public SchedulingConfiguration Scheduling { get; set; }
+
+        public ReportsConfiguration Reports { get; set; }
     }
 }
