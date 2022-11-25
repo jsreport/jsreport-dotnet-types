@@ -12,5 +12,10 @@ namespace jsreport.Types
         public string Keywords { get; set; }
         public string Creator { get; set; }
         public string Producer { get; set; }
+        /// <summary>
+        /// serialized json key-value pairs
+        /// JsonSerializer.Serialize(new { a = "a" } )
+        /// </summary>        
+        public string Custom { get; set; }
     }
 }
