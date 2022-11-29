@@ -18,5 +18,13 @@ namespace jsreport.Types
 
         [DataMember(Name = "chrome_numberOfWorkers")]
         public int? NumberOfWorkers { get; set; }
+
+        public ChromeLaunchOptionsConfiguration LaunchOptions { get; set; }
+    }
+
+    public class ChromeLaunchOptionsConfiguration
+    {
+        [DataMember(Name = "chrome_launchOptions_args")]        
+        public IEnumerable<string> Args { get; set; }
     }
 }
