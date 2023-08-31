@@ -129,5 +129,7 @@ namespace jsreport.Types
         public LicenseConfiguration License { get; set; }
 
         public IList<string> ExtensionsList { get; set; }
+
+        public WorkersConfiguration Workers { get; set; }
     }
 }
