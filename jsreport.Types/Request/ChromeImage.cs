@@ -21,5 +21,7 @@ namespace jsreport.Types
         public bool? WaitForJS { get; set; }
         public bool? WaitForNetworkIddle { get; set; }
         public string Url { get; set; }
+        public decimal? ViewportWidth { get; set; }
+        public decimal? ViewportHeight { get; set; }
     }
 }
